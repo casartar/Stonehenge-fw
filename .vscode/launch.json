@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "name": "ST-Link Linux",
+      "cwd": "${workspaceFolder}",
+      "type": "cortex-debug",
+      "executable": "${workspaceFolder}/build/Debug/Stonehenge-fw.elf",
+      "request": "launch",
+      "serverpath": "/usr/bin/openocd",
+      "servertype": "openocd",
+      "device": "STM32F401",
+      "configFiles": [
+        "/usr/share/openocd/scripts/interface/stlink.cfg",
+        "/usr/share/openocd/scripts/target/stm32f0x.cfg"
+      ],
+      "interface": "swd",
+      "runToEntryPoint": "main",
+      //"svdFile": "${workspaceFolder}/STM32F070.svd",
+      "armToolchainPath": "/usr/bin/",
+      //"gdbPath": "gdb-multiarch"
+      "preLaunchTask": "Build CMake Project"
+    }
+  ]
+}
