@@ -94,29 +94,30 @@ int main(void)
     while (1)
     {
         HAL_Delay(500);
-        charlieplexing_SetLed(1);
+        charlieplexing_SetLedState(D_158, true);
         HAL_Delay(500);
-        charlieplexing_SetLed(2);
+        charlieplexing_SetLedState(D_122, true);
         HAL_Delay(500);
-        charlieplexing_SetLed(3);
+        charlieplexing_SetLedState(D_152, true);
         HAL_Delay(500);
-        charlieplexing_SetLed(4);
+        charlieplexing_SetLedState(D_154, true);
         HAL_Delay(500);
-        charlieplexing_SetLed(5);
+        charlieplexing_SetLedState(D_105, true);
         HAL_Delay(500);
-        charlieplexing_SetLed(6);
+        charlieplexing_SetLedState(D_107, true);
         HAL_Delay(500);
-        charlieplexing_SetLed(7);
+        charlieplexing_SetLedState(D_102, true);
         HAL_Delay(500);
-        charlieplexing_SetLed(8);
+        charlieplexing_SetLedState(D_101, true);
         HAL_Delay(500);
-        charlieplexing_SetLed(9);
+        charlieplexing_SetLedState(D_130, true);
         HAL_Delay(500);
-        charlieplexing_SetLed(10);
+        charlieplexing_SetLedState(D_2_Sun, true);
         HAL_Delay(500);
-        charlieplexing_SetLed(11);
+        charlieplexing_SetLedState(D_1_Altar, true);
         HAL_Delay(500);
-        charlieplexing_SetLed(0);
+
+        charlieplexing_SetAllLedsOff();
         HAL_Delay(1500);
 
         /* USER CODE END WHILE */

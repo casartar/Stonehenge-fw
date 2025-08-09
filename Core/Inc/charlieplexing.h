@@ -2,10 +2,10 @@
 #define __CHARLIEPLEXING_H
 
 #include "main.h"
+#include <stdbool.h>
 
-enum Led
+enum Leds
 {
-    None,
     D_158,
     D_122,
     D_152,
@@ -16,9 +16,12 @@ enum Led
     D_101,
     D_130,
     D_2_Sun,
-    D_1_Altar
+    D_1_Altar,
+    D_Size
 };
 
-void charlieplexing_SetLed(enum Led led);
+void charlieplexing_Handler();
+void charlieplexing_SetLedState(enum Leds led, bool state);
+void charlieplexing_SetAllLedsOff();
 
 #endif
